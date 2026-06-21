@@ -1,14 +1,12 @@
-# 사각사각 문구점 <br> (Sagak Sagak Stationery) ✏️
+# 사각사각 문구점 (Sagak Sagak Stationery) ✏️
 
-> 감성 문구를 파는 가상의 온라인 문구점 — 쇼핑몰 UI/UX 포트폴리오 프로젝트
-> <br> ⚠️ 학습·포트폴리오용 **데모**입니다. 실제 결제·회원 기능은 동작하지 않으며, 모든 데이터는 브라우저(localStorage)에만 저장됩니다.
+> 감성 문구를 파는 가상의 온라인 문구점
 
+<br> 다이어리·스티커·펜·메모지 등 감성 문구를 둘러보고 **상품 → 장바구니 → 결제 → 주문/리뷰**로 이어지는 쇼핑 흐름을 담은 정적(static) 웹사이트입니다.
 <br>
-다이어리·스티커·펜·메모지 등 감성 문구를 둘러보고 **상품 → 장바구니 → 결제 → 주문/리뷰**로 이어지는 쇼핑 흐름을 담은 정적(static) 웹사이트입니다.
-<br> 프레임워크 없이 순수 **HTML / CSS / JavaScript**로 만들었습니다.
 
 <br> 🔗 **데모**
-- GitHub Pages: `https://<your-username>.github.io/<repo>/`  *(배포 후 실제 주소로 교체하세요)*
+- GitHub Pages: `https://jhc2265.github.io/sagaksagak/` 
 
 ---
 
