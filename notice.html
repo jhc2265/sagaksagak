@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="사각사각 문구점의 공지사항, 배송 안내, 이벤트 소식을 확인하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="공지사항 | 사각사각 문구점">
+    <meta property="og:description" content="사각사각 문구점의 공지사항, 배송 안내, 이벤트 소식을 확인하세요.">
+    <meta property="og:image" content="images/logo.png">
+    <title>공지사항 | 사각사각 문구점</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <script src="script/action.js"></script>
+</head>
+<body>
+    <header class="container">
+        <h1><a href="index.html"><img width="330" height="73" src="images/logo.png" alt="사각사각 문구점"></a></h1>
+        <a class="mobile-account-link" href="login.html" aria-label="로그인"><img src="images/icon_top3.png" alt=""></a>
+
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="index.html"><img loading="lazy" width="24" height="24" src="images/gnb_top1.png" alt="">홈</a>
+                    <ul class="lnb">
+                        <li><a href="index.html">메인페이지</a></li>
+                        <li><a href="products.html">새상품</a></li>
+                        <li><a href="notice.html#quick">이벤트</a></li>
+                        <li><a href="bestseller.html#representative">추천상품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="bestseller.html"><img loading="lazy" width="25" height="24" src="images/gnb_top2.png" alt="">베스트셀러</a>
+                    <ul class="lnb">
+                        <li><a href="bestseller.html#weekly">주간베스트</a></li>
+                        <li><a href="bestseller.html#representative">대표상품</a></li>
+                        <li><a href="bestseller.html#categories">카테고리별</a></li>
+                        <li><a href="bestseller.html#reviews">리뷰베스트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="products.html"><img loading="lazy" width="24" height="24" src="images/gnb_top3.png" alt="">상품보기</a>
+                    <ul class="lnb"><li><a href="products.html#diary">다이어리</a></li><li><a href="products.html#sticker">스티커</a></li><li><a href="products.html#pen">필기구</a></li><li><a href="products.html#memo">메모지</a></li><li><a href="products.html#keyring">키링</a></li><li><a href="products.html#pouch">파우치</a></li></ul>
+                </li>
+                <li class="active">
+                    <a href="notice.html"><img loading="lazy" width="28" height="24" src="images/gnb_top4.png" alt="">공지사항</a>
+                    <ul class="lnb">
+                        <li><a href="#notice-list">전체공지</a></li>
+                        <li><a href="#quick">배송안내</a></li>
+                        <li><a href="#quick">이벤트안내</a></li>
+                        <li><a href="#faq">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="customer.html"><img loading="lazy" width="22" height="24" src="images/gnb_top5.png" alt="">고객센터</a>
+                    <ul class="lnb"><li><a href="customer.html#faq">자주묻는질문</a></li><li><a href="inquiry.html">1:1 문의하기</a></li><li><a href="guide-view.html?type=exchange">교환/환불 안내</a></li><li><a href="shipping-track.html">배송조회</a></li></ul>
+                </li>
+            </ul>
+            <div class="login_box">
+                <div class="login">
+                    <a href="login.html"><img loading="lazy" width="24" height="24" src="images/icon_top2.png" alt="">로그인</a>
+                    <a href="signup.html"><img loading="lazy" width="24" height="24" src="images/icon_top3.png" alt="">회원가입</a>
+                    <a href="cart.html"><img loading="lazy" src="images/cart_bag.svg" alt="">장바구니</a>
+                    <a href="customer.html"><img loading="lazy" width="24" height="24" src="images/icon_top4.png" alt="">고객센터</a>
+                </div>
+                <div class="logout">
+                    <a href="mypage.html"><img loading="lazy" width="24" height="24" src="images/icon_top1.png" alt="">마이페이지</a>
+                    <a href="cart.html"><img loading="lazy" src="images/cart_bag.svg" alt="">장바구니</a>
+                    <a href="customer.html"><img loading="lazy" width="24" height="24" src="images/icon_top4.png" alt="">고객센터</a>
+                    <a href="#" class="logout-btn"><img loading="lazy" width="24" height="24" src="images/icon_top2.png" alt="">로그아웃</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notice-hero">
+            <img width="2161" height="728" src="images/notice/notice-hero.png" alt="공지 게시판과 문구류가 놓인 책상">
+            <div class="notice-hero__copy">
+                <p class="eyebrow">사각사각 문구점의 새로운 소식</p>
+                <h2>공지사항</h2>
+                <p>새로운 안내와 이벤트 소식을<br>한눈에 확인해보세요.</p>
+                <a href="#notice-list">공지 확인하기 <span>›</span></a>
+            </div>
+        </section>
+
+        <section class="quick-cards" id="quick">
+            <article>
+                <img loading="lazy" width="1254" height="1254" src="images/notice/notice-delivery.png" alt="">
+                <div><h3>배송 안내</h3><p>주문부터 배송까지<br>꼼꼼하게 안내해드려요.</p><a href="#notice-list">자세히 보기 ›</a></div>
+            </article>
+            <article>
+                <img loading="lazy" width="1254" height="1254" src="images/notice/notice-new-arrival.png" alt="">
+                <div><h3>신상품 입고</h3><p>새롭게 입고된 상품을<br>가장 먼저 만나보세요.</p><a href="products.html">상품 보러가기 ›</a></div>
+            </article>
+            <article>
+                <img loading="lazy" width="1254" height="1254" src="images/notice/notice-event.png" alt="">
+                <div><h3>이벤트 소식</h3><p>다양한 혜택과 이벤트를<br>확인해보세요.</p><a href="#notice-list">자세히 보기 ›</a></div>
+            </article>
+        </section>
+
+        <section class="notice-layout">
+            <div class="notice-board" id="notice-list">
+                <div class="section-title"><span>✿</span><h2>공지사항</h2></div>
+                <table>
+                    <caption>공지사항 목록</caption>
+                    <thead>
+                        <tr><th>번호</th><th>제목</th><th>작성일</th><th>조회수</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pinned"><td>공지</td><td><span class="tcell"><em>N</em><a href="notice-view.html?no=8">개인정보처리방침 변경 안내</a></span></td><td>2026.06.16</td><td>1,250</td></tr>
+                        <tr><td>7</td><td><span class="tcell"><a href="notice-view.html?no=7">여름 시즌 휴무 및 배송 일정 안내</a></span></td><td>2026.06.12</td><td>982</td></tr>
+                        <tr><td>6</td><td><span class="tcell"><em>N</em><a href="notice-view.html?no=6">6월 다꾸 이벤트 당첨자 발표</a></span></td><td>2026.06.08</td><td>1,432</td></tr>
+                        <tr><td>5</td><td><span class="tcell"><a href="notice-view.html?no=5">택배사 서비스 일시 중단 안내</a></span></td><td>2026.06.03</td><td>673</td></tr>
+                        <tr><td>4</td><td><span class="tcell"><a href="notice-view.html?no=4">골든위크 기간 배송 일정 안내</a></span></td><td>2026.05.29</td><td>1,018</td></tr>
+                        <tr><td>3</td><td><span class="tcell"><a href="notice-view.html?no=3">신규 회원 혜택 안내</a></span></td><td>2026.05.22</td><td>1,204</td></tr>
+                        <tr><td>2</td><td><span class="tcell"><a href="notice-view.html?no=2">상품 후기 적립금 정책 변경 안내</a></span></td><td>2026.05.15</td><td>842</td></tr>
+                        <tr><td>1</td><td><span class="tcell"><a href="notice-view.html?no=1">설 연휴 배송 일정 안내</a></span></td><td>2026.02.05</td><td>1,367</td></tr>
+                    </tbody>
+                </table>
+                <div class="notice-pagination"><a href="#">‹</a><a class="current" href="#">1</a><a href="#">›</a></div>
+            </div>
+
+            <aside class="notice-side">
+                <section class="faq-card" id="faq">
+                    <div class="side-title"><h3>자주 묻는 질문</h3><a href="customer.html#faq">더보기 ›</a></div>
+                    <button class="faq-q" type="button">배송은 얼마나 걸리나요?<span>+</span></button>
+                    <div class="faq-a">결제 완료 후 평균 2~3 영업일 내에 발송되며, 택배사 사정에 따라 1~2일 더 소요될 수 있습니다.</div>
+                    <button class="faq-q" type="button">주문 취소는 어떻게 하나요?<span>+</span></button>
+                    <div class="faq-a">상품이 배송 준비 중으로 변경되기 전까지 마이페이지 &gt; 주문내역에서 직접 취소하실 수 있습니다.</div>
+                    <button class="faq-q" type="button">교환/반품은 언제 가능한가요?<span>+</span></button>
+                    <div class="faq-a">상품 수령 후 7일 이내에 신청 가능하며, 단순 변심의 경우 왕복 배송비가 부과됩니다.</div>
+                    <button class="faq-q" type="button">적립금은 어떻게 사용하나요?<span>+</span></button>
+                    <div class="faq-a">보유하신 적립금은 결제 단계에서 1,000원 이상부터 현금처럼 사용하실 수 있습니다.</div>
+                </section>
+
+                <section class="cs-card" id="cs">
+                    <div>
+                        <h3>고객센터 안내</h3>
+                        <strong>02-1234-5678</strong>
+                        <p><b>운영시간</b> 10:00 ~ 17:00</p>
+                        <p><b>점심시간</b> 12:00 ~ 13:00</p>
+                        <p class="help">전화 연결이 어려운 경우<br>1:1 문의를 이용해주세요.</p>
+                        <a href="inquiry.html">1:1 문의하기 ›</a>
+                    </div>
+                    <img loading="lazy" width="1254" height="1254" src="images/notice/notice-phone.png" alt="">
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_deco"><img loading="lazy" width="1920" height="224" src="images/footer_.png" alt=""></div>
+        <div class="footer_inner">
+            <div class="footer_logo"><img width="330" height="73" src="images/logo.png" alt="사각사각 문구점"></div>
+            <div class="footer_info">
+                <p>Company : Sagak Sagak Co.Ltd.<br>Rep : Jo Hyeon Chae<br>Registration : 123-4567-8910<br>Mail Registration : SagakSagak@gmail.com<br>Address : Seoul Gangnam-1234</p>
+                <p class="footer-sitemap"><a href="sitemap.html">사이트맵</a></p>
+            </div>
+            <div class="footer_cs">
+                <p class="cs_title">Cs center</p><p class="cs_num">02-1234-5678</p>
+                <ul class="sns">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Instagram.png" alt="">insta</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Facebook.png" alt="">facebook</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_YouTube.png" alt="">youtube</a></li>
+                    <li><a href="https://www.google.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Google.png" alt="">google</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-card .faq-q').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const answer = btn.nextElementSibling;
+                const isOpen = btn.classList.toggle('open');
+                if (answer && answer.classList.contains('faq-a')) {
+                    answer.classList.toggle('open', isOpen);
+                }
+                const icon = btn.querySelector('span');
+                if (icon) icon.textContent = isOpen ? '−' : '+';
+            });
+        });
+    </script>
+</body>
+</html>

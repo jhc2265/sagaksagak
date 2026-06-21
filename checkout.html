@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="사각사각 문구점 주문서. 배송 정보와 결제 수단을 확인하고 주문을 완료하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="주문서 | 사각사각 문구점">
+    <meta property="og:description" content="사각사각 문구점 주문서 작성 페이지입니다.">
+    <meta property="og:image" content="images/logo.png">
+    <title>주문서 | 사각사각 문구점</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="script/action.js"></script>
+</head>
+<body>
+    <header class="container">
+        <h1><a href="index.html"><img width="330" height="73" src="images/logo.png" alt="사각사각 문구점"></a></h1>
+        <a class="mobile-account-link" href="login.html" aria-label="로그인"><img src="images/icon_top3.png" alt=""></a>
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="index.html"><img loading="lazy" width="24" height="24" src="images/gnb_top1.png" alt="">홈</a>
+                    <ul class="lnb">
+                        <li><a href="index.html">메인페이지</a></li>
+                        <li><a href="products.html">새상품</a></li>
+                        <li><a href="notice.html#quick">이벤트</a></li>
+                        <li><a href="bestseller.html#representative">추천상품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="bestseller.html"><img loading="lazy" width="25" height="24" src="images/gnb_top2.png" alt="">베스트셀러</a>
+                    <ul class="lnb">
+                        <li><a href="bestseller.html#weekly">주간베스트</a></li>
+                        <li><a href="bestseller.html#representative">대표상품</a></li>
+                        <li><a href="bestseller.html#categories">카테고리별</a></li>
+                        <li><a href="bestseller.html#reviews">리뷰베스트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="products.html"><img loading="lazy" width="24" height="24" src="images/gnb_top3.png" alt="">상품보기</a>
+                    <ul class="lnb"><li><a href="products.html#diary">다이어리</a></li><li><a href="products.html#sticker">스티커</a></li><li><a href="products.html#pen">필기구</a></li><li><a href="products.html#memo">메모지</a></li><li><a href="products.html#keyring">키링</a></li><li><a href="products.html#pouch">파우치</a></li></ul>
+                </li>
+                <li>
+                    <a href="notice.html"><img loading="lazy" width="28" height="24" src="images/gnb_top4.png" alt="">공지사항</a>
+                    <ul class="lnb">
+                        <li><a href="notice.html#notice-list">전체공지</a></li>
+                        <li><a href="notice.html#quick">배송안내</a></li>
+                        <li><a href="notice.html#quick">이벤트안내</a></li>
+                        <li><a href="notice.html#faq">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="customer.html"><img loading="lazy" width="22" height="24" src="images/gnb_top5.png" alt="">고객센터</a>
+                    <ul class="lnb"><li><a href="customer.html#faq">자주묻는질문</a></li><li><a href="inquiry.html">1:1 문의하기</a></li><li><a href="guide-view.html?type=exchange">교환/환불 안내</a></li><li><a href="shipping-track.html">배송조회</a></li></ul>
+                </li>
+            </ul>
+            <div class="login_box">
+                <div class="login">
+                    <a href="login.html"><img loading="lazy" width="24" height="24" src="images/icon_top2.png" alt="">로그인</a>
+                    <a href="signup.html"><img loading="lazy" width="24" height="24" src="images/icon_top3.png" alt="">회원가입</a>
+                    <a href="cart.html"><img loading="lazy" src="images/cart_bag.svg" alt="">장바구니</a>
+                    <a href="customer.html"><img loading="lazy" width="24" height="24" src="images/icon_top4.png" alt="">고객센터</a>
+                </div>
+                <div class="logout">
+                    <a href="mypage.html"><img loading="lazy" width="24" height="24" src="images/icon_top1.png" alt="">마이페이지</a>
+                    <a href="cart.html"><img loading="lazy" src="images/cart_bag.svg" alt="">장바구니</a>
+                    <a href="customer.html"><img loading="lazy" width="24" height="24" src="images/icon_top4.png" alt="">고객센터</a>
+                    <a href="#" class="logout-btn"><img loading="lazy" width="24" height="24" src="images/icon_top2.png" alt="">로그아웃</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-head">
+            <h2>주문서</h2>
+            <p>배송 정보와 결제 수단을 확인하고 주문을 완료해주세요.</p>
+        </div>
+
+        <form class="checkout-wrap" id="checkout-form" novalidate>
+            <div class="checkout-main">
+                <section class="co-block">
+                    <h3>배송 정보</h3>
+                    <div class="field"><label>받는 분 <span class="req">*</span></label><input type="text" id="co-name" placeholder="이름을 입력해주세요." required></div>
+                    <div class="field"><label>연락처 <span class="req">*</span></label><input type="tel" id="co-tel" placeholder="'-' 없이 숫자만 입력" required></div>
+                    <div class="field"><label>주소 <span class="req">*</span></label>
+                        <div style="display:flex;gap:8px;">
+                            <input type="text" id="co-zip" placeholder="우편번호" readonly style="flex:0 0 120px;background:#faf6f1;">
+                            <button type="button" id="co-zip-btn" style="flex:0 0 auto;padding:0 16px;border:1px solid #916D57;background:#fff;color:#916D57;border-radius:8px;cursor:pointer;font-size:14px;white-space:nowrap;">우편번호 찾기</button>
+                        </div>
+                        <input type="text" id="co-addr1" placeholder="기본 주소" required style="margin-top:10px;">
+                        <input type="text" id="co-addr2" placeholder="상세 주소" style="margin-top:10px;"></div>
+                    <div class="field"><label>배송 메모</label>
+                        <select id="co-memo">
+                            <option value="">메모를 선택해주세요.</option>
+                            <option>문 앞에 놓아주세요.</option>
+                            <option>경비실에 맡겨주세요.</option>
+                            <option>배송 전 연락 부탁드려요.</option>
+                            <option>부재 시 문 앞에 놓아주세요.</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="co-block">
+                    <h3>결제 수단</h3>
+                    <div class="pay-options">
+                        <label class="pay-opt"><input type="radio" name="pay" value="카드" checked><span>신용·체크카드</span></label>
+                        <label class="pay-opt"><input type="radio" name="pay" value="계좌이체"><span>실시간 계좌이체</span></label>
+                        <label class="pay-opt"><input type="radio" name="pay" value="무통장입금"><span>무통장입금</span></label>
+                        <label class="pay-opt"><input type="radio" name="pay" value="간편결제"><span>간편결제</span></label>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="checkout-summary">
+                <h3>주문 상품</h3>
+                <ul class="co-items" id="co-items"></ul>
+                <div class="sum-row"><span>상품 금액</span><span id="sum-goods">0원</span></div>
+                <div class="sum-row"><span>배송비</span><span id="sum-ship">0원</span></div>
+                <div class="sum-row total"><span>총 결제금액</span><strong id="sum-total">0원</strong></div>
+                <button type="submit" class="btn-primary">결제하기</button>
+                <p class="cart-note">결제하기를 누르면 주문이 완료됩니다.</p>
+                <p class="form-msg" id="co-msg" hidden></p>
+            </aside>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer_deco"><img loading="lazy" width="1920" height="224" src="images/footer_.png" alt=""></div>
+        <div class="footer_inner">
+            <div class="footer_logo"><img width="330" height="73" src="images/logo.png" alt="사각사각 문구점"></div>
+            <div class="footer_info">
+                <p>Company : Sagak Sagak Co.Ltd.<br>Rep : Jo Hyeon Chae<br>Registration : 123-4567-8910<br>Mail Registration : SagakSagak@gmail.com<br>Address : Seoul Gangnam-1234</p>
+                <p class="footer-sitemap"><a href="sitemap.html">사이트맵</a></p>
+            </div>
+            <div class="footer_cs">
+                <p class="cs_title">Cs center</p><p class="cs_num">02-1234-5678</p>
+                <ul class="sns">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Instagram.png" alt="">insta</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Facebook.png" alt="">facebook</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_YouTube.png" alt="">youtube</a></li>
+                    <li><a href="https://www.google.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Google.png" alt="">google</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+    (function () {
+        var S = window.SagakShop;
+
+        /* 주문 상품 / 금액 렌더 (장바구니와 동일 데이터) */
+        function render() {
+            var items = S.cart.get();
+            document.getElementById('co-items').innerHTML = items.map(function (it) {
+                var p = S.products[it.id];
+                return '<li><img src="' + p.img + '" alt=""><div><p class="n">' + p.name + '</p><p class="q">수량 ' + it.qty + '개</p></div><span>' + S.won(p.price * it.qty) + '</span></li>';
+            }).join('');
+            var goods = S.cart.goods();
+            var ship = (goods === 0 || goods >= S.FREE_SHIP_MIN) ? 0 : S.SHIP_FEE;
+            document.getElementById('sum-goods').textContent = S.won(goods);
+            document.getElementById('sum-ship').textContent = S.won(ship);
+            document.getElementById('sum-total').textContent = S.won(goods + ship);
+        }
+        render();
+
+        if (S.cart.count() === 0) {
+            var m0 = document.getElementById('co-msg');
+            m0.hidden = false; m0.className = 'form-msg error';
+            m0.textContent = '장바구니가 비어 있어요. 상품을 먼저 담아주세요.';
+        }
+
+        document.getElementById('co-zip-btn').addEventListener('click', function () {
+            if (!(window.daum && window.daum.Postcode)) {
+                alert('주소 검색 서비스를 불러오지 못했어요. 주소를 직접 입력해주세요.');
+                document.getElementById('co-addr1').focus();
+                return;
+            }
+            new daum.Postcode({
+                oncomplete: function (data) {
+                    document.getElementById('co-zip').value = data.zonecode;
+                    document.getElementById('co-addr1').value = data.roadAddress || data.jibunAddress;
+                    document.getElementById('co-addr2').focus();
+                }
+            }).open();
+        });
+
+        document.getElementById('checkout-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var name = document.getElementById('co-name').value.trim();
+            var tel = document.getElementById('co-tel').value.trim();
+            var addr = document.getElementById('co-addr1').value.trim();
+            var msg = document.getElementById('co-msg');
+            if (S.cart.count() === 0) {
+                msg.hidden = false; msg.className = 'form-msg error';
+                msg.textContent = '장바구니가 비어 있어요. 상품을 먼저 담아주세요.';
+                return;
+            }
+            if (!name || !tel || !addr) {
+                msg.hidden = false; msg.className = 'form-msg error';
+                msg.textContent = '받는 분, 연락처, 주소를 모두 입력해주세요.';
+                return;
+            }
+            if (!/^0\d{1,2}\d{3,4}\d{4}$/.test(tel.replace(/[^0-9]/g, ''))) {
+                msg.hidden = false; msg.className = 'form-msg error';
+                msg.textContent = '연락처를 정확히 입력해주세요. (숫자만)';
+                return;
+            }
+            S.cart.clear();
+            location.href = 'order-complete.html';
+        });
+    })();
+    </script>
+</body>
+</html>

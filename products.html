@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="다이어리, 필기구, 스티커, 메모지, 파우치까지 사각사각 문구점의 다양한 문구를 둘러보세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="상품보기 | 사각사각 문구점">
+    <meta property="og:description" content="다이어리, 필기구, 스티커, 메모지, 파우치까지 사각사각 문구점의 다양한 문구를 둘러보세요.">
+    <meta property="og:image" content="images/logo.png">
+    <title>상품보기 | 사각사각 문구점</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <script src="script/action.js"></script>
+</head>
+<body>
+    <header class="container">
+        <h1><a href="index.html"><img width="330" height="73" src="images/logo.png" alt="사각사각 문구점"></a></h1>
+        <a class="mobile-account-link" href="login.html" aria-label="로그인"><img src="images/icon_top3.png" alt=""></a>
+
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="index.html"><img loading="lazy" width="24" height="24" src="images/gnb_top1.png" alt="">홈</a>
+                    <ul class="lnb">
+                        <li><a href="index.html">메인페이지</a></li>
+                        <li><a href="products.html">새상품</a></li>
+                        <li><a href="notice.html#quick">이벤트</a></li>
+                        <li><a href="bestseller.html#representative">추천상품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="bestseller.html"><img loading="lazy" width="25" height="24" src="images/gnb_top2.png" alt="">베스트셀러</a>
+                    <ul class="lnb">
+                        <li><a href="bestseller.html#weekly">주간베스트</a></li>
+                        <li><a href="bestseller.html#representative">대표상품</a></li>
+                        <li><a href="bestseller.html#categories">카테고리별</a></li>
+                        <li><a href="bestseller.html#reviews">리뷰베스트</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="products.html"><img loading="lazy" width="24" height="24" src="images/gnb_top3.png" alt="">상품보기</a>
+                    <ul class="lnb"><li><a href="products.html#diary">다이어리</a></li><li><a href="products.html#sticker">스티커</a></li><li><a href="products.html#pen">필기구</a></li><li><a href="products.html#memo">메모지</a></li><li><a href="products.html#keyring">키링</a></li><li><a href="products.html#pouch">파우치</a></li></ul>
+                </li>
+                <li>
+                    <a href="notice.html"><img loading="lazy" width="28" height="24" src="images/gnb_top4.png" alt="">공지사항</a>
+                    <ul class="lnb">
+                        <li><a href="notice.html#notice-list">전체공지</a></li>
+                        <li><a href="notice.html#quick">배송안내</a></li>
+                        <li><a href="notice.html#quick">이벤트안내</a></li>
+                        <li><a href="notice.html#faq">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="customer.html"><img loading="lazy" width="22" height="24" src="images/gnb_top5.png" alt="">고객센터</a>
+                    <ul class="lnb"><li><a href="customer.html#faq">자주묻는질문</a></li><li><a href="inquiry.html">1:1 문의하기</a></li><li><a href="guide-view.html?type=exchange">교환/환불 안내</a></li><li><a href="shipping-track.html">배송조회</a></li></ul>
+                </li>
+            </ul>
+            <div class="login_box">
+                <div class="login">
+                    <a href="login.html"><img loading="lazy" width="24" height="24" src="images/icon_top2.png" alt="">로그인</a>
+                    <a href="signup.html"><img loading="lazy" width="24" height="24" src="images/icon_top3.png" alt="">회원가입</a>
+                    <a href="cart.html"><img loading="lazy" src="images/cart_bag.svg" alt="">장바구니</a>
+                    <a href="customer.html"><img loading="lazy" width="24" height="24" src="images/icon_top4.png" alt="">고객센터</a>
+                </div>
+                <div class="logout">
+                    <a href="mypage.html"><img loading="lazy" width="24" height="24" src="images/icon_top1.png" alt="">마이페이지</a>
+                    <a href="cart.html"><img loading="lazy" src="images/cart_bag.svg" alt="">장바구니</a>
+                    <a href="customer.html"><img loading="lazy" width="24" height="24" src="images/icon_top4.png" alt="">고객센터</a>
+                    <a href="#" class="logout-btn"><img loading="lazy" width="24" height="24" src="images/icon_top2.png" alt="">로그아웃</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-hero">
+            <img width="2162" height="727" src="images/products/products-hero.png" alt="햇살이 들어오는 책상 위 문구류">
+            <div class="products-hero__copy">
+                <p class="eyebrow">사각사각 문구점의 다양한 문구들</p>
+                <h2>상품보기</h2>
+                <p>기록이 즐거워지는 아이템들을<br>천천히 둘러보세요.</p>
+                <a href="#product-list">전체 상품 둘러보기 <span>›</span></a>
+            </div>
+        </section>
+
+        <section class="shop-wrap" id="product-list">
+            <aside class="filter-panel">
+                <h3>카테고리</h3>
+                <ul class="category-list">
+                    <li><a class="selected" href="#product-list" data-cat="all">전체 상품</a></li>
+                    <li><a href="#product-list" data-cat="diary">다이어리·노트</a></li>
+                    <li><a href="#product-list" data-cat="pen">필기구</a></li>
+                    <li><a href="#product-list" data-cat="sticker">스티커</a></li>
+                    <li><a href="#product-list" data-cat="memo">메모지</a></li>
+                    <li><a href="#product-list" data-cat="pouch">파우치·케이스</a></li>
+                    <li><a href="#product-list" data-cat="keyring">선물·키링</a></li>
+                    <li><a href="#product-list" data-cat="desk">데스크테리어</a></li>
+                </ul>
+
+                <button type="button" class="filter-toggle" aria-expanded="false" aria-controls="filter-options">필터 설정</button>
+
+                <div class="filter-options" id="filter-options">
+                    <div class="filter-group">
+                        <h4>가격대</h4>
+                        <label><input type="checkbox" class="f-price" data-min="0" data-max="5000"><span>~ 5,000원</span></label>
+                        <label><input type="checkbox" class="f-price" data-min="5001" data-max="10000"><span>5,000원 ~ 10,000원</span></label>
+                        <label><input type="checkbox" class="f-price" data-min="10001" data-max="20000"><span>10,000원 ~ 20,000원</span></label>
+                        <label><input type="checkbox" class="f-price" data-min="20001" data-max="100000000"><span>20,000원 이상</span></label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>상품 타입</h4>
+                        <label><input type="checkbox" class="f-type" data-type="best"><span>베스트셀러</span></label>
+                        <label><input type="checkbox" class="f-type" data-type="new"><span>신상품</span></label>
+                        <label><input type="checkbox" class="f-type" data-type="sale"><span>할인상품</span></label>
+                    </div>
+
+                    <button type="button" class="filter-reset">필터 초기화</button>
+                </div>
+
+                <div class="mini-banner">
+                    <strong>신상품이<br>궁금하다면?</strong>
+                    <a href="products.html#product-list">신상품 보러가기 ›</a>
+                </div>
+            </aside>
+
+            <div class="product-area">
+                <div class="shop-head">
+                    <p>총 <strong id="result-count">12개</strong>의 상품이 있습니다.</p>
+                    <div class="shop-controls">
+                        <select id="sort-select" aria-label="정렬 기준">
+                            <option value="new">신상품순</option>
+                            <option value="price-asc">가격 낮은순</option>
+                            <option value="price-desc">가격 높은순</option>
+                            <option value="name">이름순</option>
+                        </select>
+                        <select id="count-select" aria-label="표시 개수">
+                            <option value="99">전체 보기</option>
+                            <option value="8">8개씩 보기</option>
+                            <option value="4">4개씩 보기</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="shop-grid">
+                    <article class="shop-card" id="diary" data-category="diary" data-price="15900" data-type="best">
+                        <span class="badge">베스트</span>
+                        <a href="product-view.html?id=daily-set"><img loading="lazy" width="1448" height="1086" src="images/products/diary-starter-set.png" alt="사각사각 데일리 필기 세트"></a>
+                        <div class="shop-card__body"><h3>사각사각 데일리 필기 세트</h3><p>매일 쓰는 필수 아이템 모음 세트</p><strong>15,900원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="diary" data-price="12500" data-type="new">
+                        <span class="badge new">신상품</span>
+                        <a href="product-view.html?id=floral-diary"><img loading="lazy" width="1448" height="1086" src="images/products/floral-diary-set.png" alt="플라워 패턴 다이어리"></a>
+                        <div class="shop-card__body"><h3>플라워 패턴 다이어리</h3><p>잔잔한 플라워 패턴의 만년 다이어리</p><strong>12,500원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" id="pen" data-category="pen" data-price="6800" data-type="sale">
+                        <span class="badge sale">할인</span>
+                        <a href="product-view.html?id=gel-pen-4"><img loading="lazy" width="1448" height="1086" src="images/products/pastel-gel-pen-4set.png" alt="사각사각 젤펜 4종 세트"></a>
+                        <div class="shop-card__body"><h3>사각사각 젤펜 4종 세트</h3><p>부드러운 필기감의 0.5mm 젤펜 세트</p><strong>6,800원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="sticker" data-price="7900" data-type="">
+                        <a href="product-view.html?id=washi-6"><img loading="lazy" width="1448" height="1086" src="images/products/floral-washi-tape-6set.png" alt="마스킹테이프 6종 세트"></a>
+                        <div class="shop-card__body"><h3>마스킹테이프 6종 세트</h3><p>다꾸가 즐거워지는 감성 마테 세트</p><strong>7,900원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" id="memo" data-category="memo" data-price="3900" data-type="">
+                        <a href="product-view.html?id=memo-3"><img loading="lazy" width="1448" height="1086" src="images/products/memo-pad-3set.png" alt="모눈 메모지 3종 세트"></a>
+                        <div class="shop-card__body"><h3>모눈 메모지 3종 세트</h3><p>매었다 붙였다 활용도 높은 메모지</p><strong>3,900원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" id="sticker" data-category="sticker" data-price="4500" data-type="best">
+                        <span class="badge">베스트</span>
+                        <a href="product-view.html?id=vintage-sticker"><img loading="lazy" width="1448" height="1086" src="images/products/vintage-sticker-pack.png" alt="빈티지 플라워 스티커팩"></a>
+                        <div class="shop-card__body"><h3>빈티지 플라워 스티커팩</h3><p>다이어리를 꾸미기 좋은 스티커 팩</p><strong>4,500원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" id="pouch" data-category="pouch" data-price="9900" data-type="">
+                        <a href="product-view.html?id=check-pouch"><img loading="lazy" width="1448" height="1086" src="images/products/check-pencil-pouch.png" alt="체크 패브릭 파우치"></a>
+                        <div class="shop-card__body"><h3>체크 패브릭 파우치</h3><p>넉넉한 수납의 체크 파우치</p><strong>9,900원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" id="keyring" data-category="keyring" data-price="6000" data-type="">
+                        <a href="product-view.html?id=teddy-keyring"><img loading="lazy" width="1448" height="1086" src="images/products/teddy-keyring-set.png" alt="곰돌이 키링"></a>
+                        <div class="shop-card__body"><h3>곰돌이 키링</h3><p>귀여운 곰돌이 키링</p><strong>6,000원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="diary" data-price="5500" data-type="">
+                        <span class="badge delivery">배송중</span>
+                        <a href="product-view.html?id=grid-note"><img loading="lazy" width="1448" height="1086" src="images/products/grid-note-b5.png" alt="그리드 노트 B5"></a>
+                        <div class="shop-card__body"><h3>그리드 노트 (B5)</h3><p>깔끔한 그리드 내지 노트</p><strong>5,500원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="memo" data-price="3200" data-type="sale">
+                        <span class="badge sale">할인</span>
+                        <a href="product-view.html?id=tteok-memo"><img loading="lazy" width="1448" height="1086" src="images/products/tteok-memo-2set.png" alt="떡메모지 2종 세트"></a>
+                        <div class="shop-card__body"><h3>떡메모지 2종 세트</h3><p>일러스트가 귀여운 떡메모지</p><strong>3,200원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" id="desk" data-category="desk" data-price="12000" data-type="">
+                        <a href="product-view.html?id=leather-case"><img loading="lazy" width="1448" height="1086" src="images/products/leather-pen-case.png" alt="가죽 펜슬케이스"></a>
+                        <div class="shop-card__body"><h3>가죽 펜슬케이스</h3><p>필기구를 깔끔하게 정리해요</p><strong>12,000원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="desk" data-price="3500" data-type="">
+                        <a href="product-view.html?id=gold-clip"><img loading="lazy" width="1448" height="1086" src="images/products/gold-binder-clip-set.png" alt="골드 클립 세트"></a>
+                        <div class="shop-card__body"><h3>골드 클립 세트</h3><p>고급스러운 골드 클립 세트</p><strong>3,500원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="desk" data-price="5500" data-type="">
+                        <a href="product-view.html?id=vintage-clip-6"><img loading="lazy" width="1448" height="1086" src="images/bestseller/antique-binder-clip-set.png" alt="빈티지 클립 6종 세트"></a>
+                        <div class="shop-card__body"><h3>빈티지 클립 6종 세트</h3><p>분위기 있는 빈티지 클립 6종</p><strong>5,500원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="diary" data-price="16800" data-type="best">
+                        <span class="badge">베스트</span>
+                        <a href="product-view.html?id=weekly-diary"><img loading="lazy" width="1448" height="1086" src="images/bestseller/weekly-diary-set.png" alt="위클리 다이어리 세트"></a>
+                        <div class="shop-card__body"><h3>위클리 다이어리 세트</h3><p>한 주가 정리되는 위클리 세트</p><strong>16,800원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="diary" data-price="3800" data-type="">
+                        <a href="product-view.html?id=grid-note-a5"><img loading="lazy" width="1448" height="1086" src="images/bestseller/grid-notebook.png" alt="모눈 노트 (A5)"></a>
+                        <div class="shop-card__body"><h3>모눈 노트 (A5)</h3><p>휴대하기 좋은 A5 모눈 노트</p><strong>3,800원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="pen" data-price="7900" data-type="best">
+                        <span class="badge">베스트</span>
+                        <a href="product-view.html?id=gel-pen-5"><img loading="lazy" width="1448" height="1086" src="images/bestseller/pastel-gel-pen-set.png" alt="사각사각 젤펜 5종 세트"></a>
+                        <div class="shop-card__body"><h3>사각사각 젤펜 5종 세트</h3><p>파스텔 색감의 젤펜 5종</p><strong>7,900원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="sticker" data-price="6800" data-type="">
+                        <a href="product-view.html?id=washi-4"><img loading="lazy" width="1448" height="1086" src="images/bestseller/floral-washi-tape-set.png" alt="플라워 마스킹테이프 4종 세트"></a>
+                        <div class="shop-card__body"><h3>플라워 마스킹테이프 4종 세트</h3><p>은은한 플라워 마스킹테이프 4종</p><strong>6,800원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="sticker" data-price="4200" data-type="">
+                        <a href="product-view.html?id=emo-sticker"><img loading="lazy" width="1448" height="1086" src="images/bestseller/vintage-sticker-pack.png" alt="감성 스티커 팩"></a>
+                        <div class="shop-card__body"><h3>감성 스티커 팩</h3><p>어디에나 어울리는 감성 스티커</p><strong>4,200원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="memo" data-price="3900" data-type="">
+                        <a href="product-view.html?id=floral-memo-3"><img loading="lazy" width="1448" height="1086" src="images/bestseller/floral-memo-pad-set.png" alt="플라워 메모지 3종 세트"></a>
+                        <div class="shop-card__body"><h3>플라워 메모지 3종 세트</h3><p>감성 가득한 플라워 메모지 3종</p><strong>3,900원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                    <article class="shop-card" data-category="memo" data-price="2900" data-type="">
+                        <a href="product-view.html?id=mini-tteok"><img loading="lazy" width="1448" height="1086" src="images/bestseller/floral-memo-pad-set.png" alt="미니 떡메모지 세트"></a>
+                        <div class="shop-card__body"><h3>미니 떡메모지 세트</h3><p>작고 귀여운 미니 떡메모지</p><strong>2,900원</strong><div class="actions"><button class="wish" aria-label="찜하기"><img loading="lazy" class="heart-empty" src="images/heart_empty.svg" alt=""><img loading="lazy" class="heart-fill" src="images/heart_fill.svg" alt=""></button><button class="cart" aria-label="장바구니"><img loading="lazy" src="images/cart_bag.svg" alt=""></button></div></div>
+                    </article>
+                </div>
+                <p class="no-result" hidden>선택하신 조건에 맞는 상품이 없습니다.</p>
+
+                <div class="pagination">
+                    <a class="current" href="#">1</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div>
+                <strong>사각사각 문구점의 소식을 받아보세요.</strong>
+                <p>신상품 소식과 할인 정보, 이벤트를 가장 먼저 알려드려요!</p>
+            </div>
+            <form id="newsletter-form" novalidate>
+                <input type="email" id="newsletter-email" placeholder="이메일 주소를 입력해주세요.">
+                <button type="submit">구독하기</button>
+            </form>
+            <p class="newsletter-msg" role="status" hidden></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_deco"><img loading="lazy" width="1920" height="224" src="images/footer_.png" alt=""></div>
+        <div class="footer_inner">
+            <div class="footer_logo"><img width="330" height="73" src="images/logo.png" alt="사각사각 문구점"></div>
+            <div class="footer_info">
+                <p>Company : Sagak Sagak Co.Ltd.<br>Rep : Jo Hyeon Chae<br>Registration : 123-4567-8910<br>Mail Registration : SagakSagak@gmail.com<br>Address : Seoul Gangnam-1234</p>
+                <p class="footer-sitemap"><a href="sitemap.html">사이트맵</a></p>
+            </div>
+            <div class="footer_cs">
+                <p class="cs_title">Cs center</p><p class="cs_num">02-1234-5678</p>
+                <ul class="sns">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Instagram.png" alt="">insta</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Facebook.png" alt="">facebook</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_YouTube.png" alt="">youtube</a></li>
+                    <li><a href="https://www.google.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Google.png" alt="">google</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+/* ===== 상품 필터 · 정렬 · 개수 ===== */
+        (function () {
+            const grid = document.querySelector('.shop-grid');
+            const cards = Array.from(grid.querySelectorAll('.shop-card'));
+            cards.forEach((c, i) => { c._idx = i; });
+            const catLinks = Array.from(document.querySelectorAll('.category-list a'));
+            const priceBoxes = Array.from(document.querySelectorAll('.f-price'));
+            const typeBoxes = Array.from(document.querySelectorAll('.f-type'));
+            const sortSelect = document.getElementById('sort-select');
+            const countSelect = document.getElementById('count-select');
+            const countEl = document.getElementById('result-count');
+            const noResult = document.querySelector('.no-result');
+            const pagination = document.querySelector('.pagination');
+            let activeCat = 'all';
+            let currentPage = 1;
+
+            function nameOf(card) {
+                const h = card.querySelector('h3');
+                return h ? h.textContent.trim() : '';
+            }
+
+            function render() {
+                const priceRanges = priceBoxes.filter(b => b.checked)
+                    .map(b => [parseInt(b.dataset.min, 10), parseInt(b.dataset.max, 10)]);
+                const types = typeBoxes.filter(b => b.checked).map(b => b.dataset.type);
+
+                let list = cards.filter(function (card) {
+                    const cat = card.dataset.category;
+                    const price = parseInt(card.dataset.price, 10);
+                    const cardTypes = (card.dataset.type || '').split(' ').filter(Boolean);
+                    const catOk = activeCat === 'all' || cat === activeCat;
+                    const priceOk = priceRanges.length === 0 ||
+                        priceRanges.some(([min, max]) => price >= min && price <= max);
+                    const typeOk = types.length === 0 ||
+                        types.some(t => cardTypes.includes(t));
+                    return catOk && priceOk && typeOk;
+                });
+
+                const sortVal = sortSelect ? sortSelect.value : 'new';
+                list.sort(function (a, b) {
+                    const pa = parseInt(a.dataset.price, 10), pb = parseInt(b.dataset.price, 10);
+                    if (sortVal === 'price-asc') return pa - pb;
+                    if (sortVal === 'price-desc') return pb - pa;
+                    if (sortVal === 'name') return nameOf(a).localeCompare(nameOf(b), 'ko');
+                    return a._idx - b._idx;
+                });
+
+                list.forEach(card => grid.appendChild(card));
+
+                const limit = countSelect ? parseInt(countSelect.value, 10) : 99;
+                const totalPages = Math.max(1, Math.ceil(list.length / limit));
+                currentPage = Math.min(currentPage, totalPages);
+                const start = (currentPage - 1) * limit;
+                const end = start + limit;
+                cards.forEach(c => { c.hidden = true; });
+                list.slice(start, end).forEach(c => { c.hidden = false; });
+
+                if (countEl) countEl.textContent = list.length + '개';
+                if (noResult) noResult.hidden = list.length !== 0;
+                renderPagination(totalPages);
+            }
+
+            function renderPagination(totalPages) {
+                if (!pagination) return;
+                pagination.innerHTML = '';
+                if (totalPages <= 1) return;
+                for (let i = 1; i <= totalPages; i++) {
+                    const link = document.createElement('a');
+                    link.href = '#product-list';
+                    link.textContent = i;
+                    if (i === currentPage) link.className = 'current';
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        currentPage = i;
+                        render();
+                        document.getElementById('product-list').scrollIntoView({behavior: 'smooth', block: 'start'});
+                    });
+                    pagination.appendChild(link);
+                }
+            }
+
+            catLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    catLinks.forEach(l => l.classList.remove('selected'));
+                    link.classList.add('selected');
+                    activeCat = link.dataset.cat;
+                    currentPage = 1;
+                    render();
+                });
+            });
+
+            priceBoxes.concat(typeBoxes).forEach(box => box.addEventListener('change', function () {
+                currentPage = 1;
+                render();
+            }));
+            if (sortSelect) sortSelect.addEventListener('change', function () {
+                currentPage = 1;
+                render();
+            });
+            if (countSelect) countSelect.addEventListener('change', function () {
+                currentPage = 1;
+                render();
+            });
+
+            const resetBtn = document.querySelector('.filter-reset');
+            if (resetBtn) {
+                resetBtn.addEventListener('click', function () {
+                    activeCat = 'all';
+                    catLinks.forEach(l => l.classList.toggle('selected', l.dataset.cat === 'all'));
+                    priceBoxes.concat(typeBoxes).forEach(b => { b.checked = false; });
+                    if (sortSelect) sortSelect.value = 'new';
+                    if (countSelect) countSelect.value = '99';
+                    currentPage = 1;
+                    render();
+                });
+            }
+
+            const filterToggle = document.querySelector('.filter-toggle');
+            const filterPanel = document.querySelector('.filter-panel');
+            if (filterToggle && filterPanel) {
+                filterToggle.addEventListener('click', function () {
+                    const open = filterPanel.classList.toggle('filter-open');
+                    filterToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                });
+            }
+
+            render();
+        })();
+
+        /* ===== 뉴스레터 구독 ===== */
+        (function () {
+            const form = document.getElementById('newsletter-form');
+            if (!form) return;
+            const email = document.getElementById('newsletter-email');
+            const msg = document.querySelector('.newsletter-msg');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const val = (email.value || '').trim();
+                const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+                if (!msg) return;
+                msg.hidden = false;
+                if (ok) {
+                    msg.textContent = '구독 신청이 완료되었어요! 소식을 가장 먼저 보내드릴게요.';
+                    msg.classList.remove('error');
+                    msg.classList.add('success');
+                    email.value = '';
+                } else {
+                    msg.textContent = '올바른 이메일 주소를 입력해주세요.';
+                    msg.classList.remove('success');
+                    msg.classList.add('error');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

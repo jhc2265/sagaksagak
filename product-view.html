@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="사각사각 문구점의 상품 상세 정보를 확인하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="상품 상세 | 사각사각 문구점">
+    <meta property="og:description" content="사각사각 문구점의 상품 상세 정보를 확인하세요.">
+    <meta property="og:image" content="images/logo.png">
+    <title>상품 상세 | 사각사각 문구점</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <script src="script/action.js"></script>
+</head>
+<body>
+    <header class="container">
+        <h1><a href="index.html"><img width="330" height="73" src="images/logo.png" alt="사각사각 문구점"></a></h1>
+        <a class="mobile-account-link" href="login.html" aria-label="로그인"><img src="images/icon_top3.png" alt=""></a>
+
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="index.html"><img loading="lazy" width="24" height="24" src="images/gnb_top1.png" alt="">홈</a>
+                    <ul class="lnb">
+                        <li><a href="index.html">메인페이지</a></li>
+                        <li><a href="products.html">새상품</a></li>
+                        <li><a href="notice.html#quick">이벤트</a></li>
+                        <li><a href="bestseller.html#representative">추천상품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="bestseller.html"><img loading="lazy" width="25" height="24" src="images/gnb_top2.png" alt="">베스트셀러</a>
+                    <ul class="lnb">
+                        <li><a href="bestseller.html#weekly">주간베스트</a></li>
+                        <li><a href="bestseller.html#representative">대표상품</a></li>
+                        <li><a href="bestseller.html#categories">카테고리별</a></li>
+                        <li><a href="bestseller.html#reviews">리뷰베스트</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="products.html"><img loading="lazy" width="24" height="24" src="images/gnb_top3.png" alt="">상품보기</a>
+                    <ul class="lnb"><li><a href="products.html#diary">다이어리</a></li><li><a href="products.html#sticker">스티커</a></li><li><a href="products.html#pen">필기구</a></li><li><a href="products.html#memo">메모지</a></li><li><a href="products.html#keyring">키링</a></li><li><a href="products.html#pouch">파우치</a></li></ul>
+                </li>
+                <li>
+                    <a href="notice.html"><img loading="lazy" width="28" height="24" src="images/gnb_top4.png" alt="">공지사항</a>
+                    <ul class="lnb">
+                        <li><a href="notice.html#notice-list">전체공지</a></li>
+                        <li><a href="notice.html#quick">배송안내</a></li>
+                        <li><a href="notice.html#quick">이벤트안내</a></li>
+                        <li><a href="notice.html#faq">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="customer.html"><img loading="lazy" width="22" height="24" src="images/gnb_top5.png" alt="">고객센터</a>
+                    <ul class="lnb"><li><a href="customer.html#faq">자주묻는질문</a></li><li><a href="inquiry.html">1:1 문의하기</a></li><li><a href="guide-view.html?type=exchange">교환/환불 안내</a></li><li><a href="shipping-track.html">배송조회</a></li></ul>
+                </li>
+            </ul>
+            <div class="login_box">
+                <div class="login">
+                    <a href="login.html"><img loading="lazy" width="24" height="24" src="images/icon_top2.png" alt="">로그인</a>
+                    <a href="signup.html"><img loading="lazy" width="24" height="24" src="images/icon_top3.png" alt="">회원가입</a>
+                    <a href="cart.html"><img loading="lazy" src="images/cart_bag.svg" alt="">장바구니</a>
+                    <a href="customer.html"><img loading="lazy" width="24" height="24" src="images/icon_top4.png" alt="">고객센터</a>
+                </div>
+                <div class="logout">
+                    <a href="mypage.html"><img loading="lazy" width="24" height="24" src="images/icon_top1.png" alt="">마이페이지</a>
+                    <a href="cart.html"><img loading="lazy" src="images/cart_bag.svg" alt="">장바구니</a>
+                    <a href="customer.html"><img loading="lazy" width="24" height="24" src="images/icon_top4.png" alt="">고객센터</a>
+                    <a href="#" class="logout-btn"><img loading="lazy" width="24" height="24" src="images/icon_top2.png" alt="">로그아웃</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pv-wrap" id="pvWrap">
+            <nav class="pv-breadcrumb"><a href="products.html">상품보기</a> <span>›</span> <em id="pvCrumb">상품</em></nav>
+
+            <div class="pv-top" id="pvTop">
+                <div class="pv-image"><img id="pvImg" src="" alt=""></div>
+                <div class="pv-info">
+                    <span class="pv-badge" id="pvBadge" hidden></span>
+                    <h2 id="pvName">상품을 불러오는 중입니다.</h2>
+                    <p class="pv-desc" id="pvDesc"></p>
+                    <div class="pv-rating" id="pvRating"></div>
+                    <div class="pv-price"><strong id="pvPrice">-</strong></div>
+
+                    <div class="pv-qty">
+                        <span class="pv-qty__label">수량</span>
+                        <div class="qty-box">
+                            <button type="button" id="qtyMinus" aria-label="수량 줄이기">−</button>
+                            <input id="qtyInput" type="text" value="1" inputmode="numeric" readonly>
+                            <button type="button" id="qtyPlus" aria-label="수량 늘리기">+</button>
+                        </div>
+                    </div>
+
+                    <div class="pv-total">총 상품금액 <strong id="pvTotal">-</strong></div>
+
+                    <div class="pv-actions">
+                        <button type="button" class="btn-cart" id="btnCart">장바구니 담기</button>
+                        <a class="btn-buy" id="btnBuy" href="checkout.html">바로 구매</a>
+                        <button type="button" class="btn-wish" id="btnWish" aria-pressed="false" aria-label="찜하기">♡</button>
+                    </div>
+
+                    <ul class="pv-meta">
+                        <li><span>배송비</span> 3,000원 · 30,000원 이상 구매 시 무료</li>
+                        <li><span>배송예정</span> 결제 완료 후 평균 2~3 영업일</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pv-detail" id="pvDetail">
+                <h3>상품 상세</h3>
+                <div class="pv-detail__body" id="pvDetailBody"></div>
+                <div class="pv-spec" id="pvSpec"></div>
+                <div class="pv-detail__img"><img id="pvDetailImg" src="" alt=""></div>
+                <div class="pv-detail__notice">
+                    <h4>배송 · 교환/반품 안내</h4>
+                    <p>· 결제 완료 후 평균 2~3 영업일 내에 발송되며, 택배사 사정에 따라 1~2일 더 소요될 수 있습니다.<br>
+                    · 단순 변심에 의한 교환/반품은 상품 수령 후 7일 이내 신청 가능하며 왕복 배송비가 부과됩니다.<br>
+                    · 불량 · 오배송의 경우 배송비 부담 없이 교환 또는 환불해 드립니다.</p>
+                </div>
+            </div>
+
+            <section class="pv-reviews" id="pvReviews"></section>
+
+            <div class="pv-related" id="pvRelated"></div>
+
+            <div class="pv-back"><a href="products.html">목록으로</a></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_deco"><img loading="lazy" width="1920" height="224" src="images/footer_.png" alt=""></div>
+        <div class="footer_inner">
+            <div class="footer_logo"><img width="330" height="73" src="images/logo.png" alt="사각사각 문구점"></div>
+            <div class="footer_info">
+                <p>Company : Sagak Sagak Co.Ltd.<br>Rep : Jo Hyeon Chae<br>Registration : 123-4567-8910<br>Mail Registration : SagakSagak@gmail.com<br>Address : Seoul Gangnam-1234</p>
+                <p class="footer-sitemap"><a href="sitemap.html">사이트맵</a></p>
+            </div>
+            <div class="footer_cs">
+                <p class="cs_title">Cs center</p><p class="cs_num">02-1234-5678</p>
+                <ul class="sns">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Instagram.png" alt="">insta</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Facebook.png" alt="">facebook</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_YouTube.png" alt="">youtube</a></li>
+                    <li><a href="https://www.google.com" target="_blank" rel="noopener"><img loading="lazy" width="24" height="24" src="images/footer_Google.png" alt="">google</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function () {
+        var PRODUCTS = {
+            "daily-set":      {name:"사각사각 데일리 필기 세트", price:15900, cat:"다이어리·노트", img:"images/products/diary-starter-set.png", badge:"best", desc:"매일 쓰는 필수 아이템을 한 번에 담은 구성 세트예요.", detail:["다이어리, 볼펜, 메모지까지 매일 쓰는 필기 아이템을 한 세트에 담았어요.","처음 문구를 시작하는 분께도, 선물용으로도 부담 없는 구성입니다."]},
+            "floral-diary":   {name:"플라워 패턴 다이어리", price:12500, cat:"다이어리·노트", img:"images/products/floral-diary-set.png", badge:"new", desc:"잔잔한 플라워 패턴의 만년 다이어리입니다.", detail:["날짜가 인쇄되지 않은 만년형이라 언제 시작해도 부담이 없어요.","부드러운 종이 질감으로 만년필과 젤펜 모두 잘 어울립니다."]},
+            "gel-pen-4":      {name:"사각사각 젤펜 4종 세트", price:6800, cat:"필기구", img:"images/products/pastel-gel-pen-4set.png", badge:"sale", desc:"부드러운 필기감의 0.5mm 젤펜 4종 세트.", detail:["번짐이 적고 발색이 좋은 0.5mm 젤펜 4가지 색 구성이에요.","다이어리 꾸미기와 필기 모두에 좋은 파스텔 컬러입니다."]},
+            "washi-6":        {name:"마스킹테이프 6종 세트", price:7900, cat:"스티커", img:"images/products/floral-washi-tape-6set.png", badge:"", desc:"다꾸가 즐거워지는 감성 마스킹테이프 6종.", detail:["손으로 쉽게 찢어 쓸 수 있어 다이어리 꾸미기에 딱 좋아요.","서로 잘 어울리는 6가지 패턴으로 구성했습니다."]},
+            "memo-3":         {name:"모눈 메모지 3종 세트", price:3900, cat:"메모지", img:"images/products/memo-pad-3set.png", badge:"", desc:"떼었다 붙였다 활용도 높은 메모지 3종.", detail:["깔끔한 모눈 디자인으로 메모와 To-do 작성에 좋아요.","책상, 노트, 모니터 어디에 붙여도 잘 어울립니다."]},
+            "vintage-sticker":{name:"빈티지 플라워 스티커팩", price:4500, cat:"스티커", img:"images/products/vintage-sticker-pack.png", badge:"best", desc:"다이어리를 꾸미기 좋은 스티커 팩.", detail:["은은한 빈티지 플라워 감성의 스티커를 한 팩에 담았어요.","다이어리, 엽서, 편지 어디에나 잘 어울립니다."]},
+            "check-pouch":    {name:"체크 패브릭 파우치", price:9900, cat:"파우치·케이스", img:"images/products/check-pencil-pouch.png", badge:"", desc:"넉넉한 수납의 체크 패턴 파우치.", detail:["펜과 작은 문구류를 넉넉하게 담을 수 있는 사이즈예요.","튼튼한 지퍼와 패브릭 소재로 데일리 파우치로 좋아요."]},
+            "teddy-keyring":  {name:"곰돌이 키링", price:6000, cat:"선물·키링", img:"images/products/teddy-keyring-set.png", badge:"", desc:"가방을 귀엽게 채워주는 곰돌이 키링.", detail:["가방이나 파우치에 달기 좋은 귀여운 곰돌이 키링이에요.","작은 선물로도 부담 없이 좋은 아이템입니다."]},
+            "grid-note":      {name:"그리드 노트 (B5)", price:5500, cat:"다이어리·노트", img:"images/products/grid-note-b5.png", badge:"", desc:"깔끔한 그리드 내지의 B5 노트.", detail:["필기와 드로잉 모두 편한 5mm 모눈 내지를 사용했어요.","넓게 쓰기 좋은 B5 사이즈로 학습·업무용으로 좋습니다."]},
+            "tteok-memo":     {name:"떡메모지 2종 세트", price:3200, cat:"메모지", img:"images/products/tteok-memo-2set.png", badge:"sale", desc:"일러스트가 귀여운 떡메모지 2종.", detail:["두껍게 쌓인 떡메모지로 메모와 다꾸 모두 즐겁게.","귀여운 일러스트 2가지 디자인으로 구성했어요."]},
+            "leather-case":   {name:"가죽 펜슬케이스", price:12000, cat:"데스크테리어", img:"images/products/leather-pen-case.png", badge:"", desc:"필기구를 깔끔하게 정리하는 가죽 케이스.", detail:["차분한 컬러의 가죽 질감으로 오래 써도 멋스러워요.","펜과 자, 작은 문구를 깔끔하게 정리할 수 있습니다."]},
+            "gold-clip":      {name:"골드 클립 세트", price:3500, cat:"데스크테리어", img:"images/products/gold-binder-clip-set.png", badge:"", desc:"고급스러운 골드 컬러 클립 세트.", detail:["서류와 메모를 깔끔하게 정리하는 골드 클립이에요.","책상 위 포인트 아이템으로도 잘 어울립니다."]},
+            "weekly-diary":   {name:"위클리 다이어리 세트", price:16800, cat:"다이어리·노트", img:"images/bestseller/weekly-diary-set.png", badge:"best", desc:"한 주가 정리되는 위클리 다이어리 세트.", detail:["주간 계획을 한눈에 정리할 수 있는 위클리 구성이에요.","전용 스티커와 함께 제공되어 바로 꾸미기 좋아요."]},
+            "gel-pen-5":      {name:"사각사각 젤펜 5종 세트", price:7900, cat:"필기구", img:"images/bestseller/pastel-gel-pen-set.png", badge:"best", desc:"파스텔 색감의 젤펜 5종 세트.", detail:["서로 잘 어울리는 파스텔 5색으로 구성했어요.","0.5mm 촉으로 필기와 다꾸 모두 부드럽게."]},
+            "washi-4":        {name:"플라워 마스킹테이프 4종 세트", price:6800, cat:"스티커", img:"images/bestseller/floral-washi-tape-set.png", badge:"", desc:"은은한 플라워 마스킹테이프 4종.", detail:["차분한 플라워 패턴 4가지로 구성된 마테 세트예요.","다이어리, 편지, 포장 등 활용도가 높습니다."]},
+            "floral-memo-3":  {name:"플라워 메모지 3종 세트", price:3900, cat:"메모지", img:"images/bestseller/floral-memo-pad-set.png", badge:"", desc:"감성 가득한 플라워 메모지 3종.", detail:["잔잔한 플라워 일러스트가 그려진 메모지 3종이에요.","메모와 편지 작성에 두루 좋습니다."]},
+            "emo-sticker":    {name:"감성 스티커 팩", price:4200, cat:"스티커", img:"images/bestseller/vintage-sticker-pack.png", badge:"", desc:"어디에나 잘 어울리는 감성 스티커.", detail:["다양한 무드의 스티커를 한 팩에 담았어요.","다이어리 꾸미기에 포인트로 좋습니다."]},
+            "vintage-clip-6": {name:"빈티지 클립 6종 세트", price:5500, cat:"데스크테리어", img:"images/bestseller/antique-binder-clip-set.png", badge:"", desc:"분위기 있는 빈티지 클립 6종.", detail:["앤티크한 컬러감의 클립 6가지 구성이에요.","서류 정리와 데스크 데코 모두에 잘 어울립니다."]},
+            "grid-note-a5":   {name:"모눈 노트 (A5)", price:3800, cat:"다이어리·노트", img:"images/bestseller/grid-notebook.png", badge:"", desc:"휴대하기 좋은 A5 모눈 노트.", detail:["가볍게 들고 다니기 좋은 A5 사이즈 모눈 노트예요.","필기와 아이디어 스케치에 부담 없이 좋습니다."]},
+            "mini-tteok":     {name:"미니 떡메모지 세트", price:2900, cat:"메모지", img:"images/bestseller/floral-memo-pad-set.png", badge:"", desc:"작고 귀여운 미니 떡메모지.", detail:["작은 사이즈로 어디에나 붙이기 좋은 떡메모지예요.","귀여운 디자인으로 일상에 소소한 즐거움을 더해요."]}
+        };
+
+        var BADGE = { best: "베스트", "new": "신상품", sale: "할인" };
+
+        function getParam(name) { return new URLSearchParams(location.search).get(name); }
+        function won(n) { return n.toLocaleString("ko-KR") + "원"; }
+
+        var id = getParam("id");
+        var data = PRODUCTS[id];
+
+        var wrap = document.getElementById("pvWrap");
+        var nameEl = document.getElementById("pvName");
+
+        if (!data) {
+            document.getElementById("pvTop").style.display = "none";
+            document.getElementById("pvDetail").style.display = "none";
+            document.getElementById("pvCrumb").textContent = "상품";
+            var msg = document.createElement("p");
+            msg.className = "pv-empty";
+            msg.textContent = "존재하지 않는 상품입니다. 상품 목록에서 다시 선택해 주세요.";
+            wrap.insertBefore(msg, document.getElementById("pvRelated"));
+            return;
+        }
+
+        document.title = data.name + " | 사각사각 문구점";
+        document.getElementById("pvCrumb").textContent = data.cat;
+        document.getElementById("pvImg").src = data.img;
+        document.getElementById("pvImg").alt = data.name;
+        document.getElementById("pvDetailImg").src = data.img;
+        document.getElementById("pvDetailImg").alt = data.name;
+        nameEl.textContent = data.name;
+        document.getElementById("pvDesc").textContent = data.desc;
+        document.getElementById("pvPrice").textContent = won(data.price);
+
+        var badgeEl = document.getElementById("pvBadge");
+        if (data.badge && BADGE[data.badge]) {
+            badgeEl.textContent = BADGE[data.badge];
+            badgeEl.className = "pv-badge " + data.badge;
+            badgeEl.hidden = false;
+        }
+
+        document.getElementById("pvDetailBody").innerHTML =
+            data.detail.map(function (p) { return "<p>" + p + "</p>"; }).join("");
+
+        // 수량 / 합계
+        var qty = 1;
+        var qtyInput = document.getElementById("qtyInput");
+        var totalEl = document.getElementById("pvTotal");
+        function renderTotal() { qtyInput.value = qty; totalEl.textContent = won(data.price * qty); }
+        document.getElementById("qtyMinus").addEventListener("click", function () { if (qty > 1) { qty--; renderTotal(); } });
+        document.getElementById("qtyPlus").addEventListener("click", function () { if (qty < 99) { qty++; renderTotal(); } });
+        renderTotal();
+
+        // 장바구니 / 찜 (공용 모듈 연동)
+        var S = window.SagakShop;
+        document.getElementById("btnCart").addEventListener("click", function () {
+            S.cart.add(id, qty);
+            window.sagakToast && window.sagakToast(data.name + " " + qty + "개를 장바구니에 담았어요.");
+        });
+        document.getElementById("btnBuy").addEventListener("click", function () {
+            S.cart.add(id, qty);  // 담은 뒤 결제 페이지로 이동 (href=checkout.html)
+        });
+        var wish = document.getElementById("btnWish");
+        function paintWish(on) {
+            wish.setAttribute("aria-pressed", String(on));
+            wish.innerHTML = '<img class="pv-heart" src="' + (on ? "images/heart_fill.svg" : "images/heart_empty.svg") + '" alt="">';
+            wish.classList.toggle("on", on);
+        }
+        paintWish(S.wish.has(id));   // 저장된 찜 상태 반영
+        wish.addEventListener("click", function () {
+            var on = S.wish.toggle(id);
+            paintWish(on);
+            window.sagakToast && window.sagakToast(on ? "찜 목록에 담았어요." : "찜을 해제했어요.");
+        });
+
+        // 별점 / 스펙 / 리뷰
+        function starHtml(n) {
+            var s = "";
+            for (var i = 0; i < 5; i++) s += '<span class="pv-star' + (i < n ? "" : " off") + '">★</span>';
+            return s;
+        }
+        var rate = S.rating(id);
+        document.getElementById("pvRating").innerHTML =
+            starHtml(Math.round(rate.score)) +
+            '<b>' + rate.score.toFixed(1) + '</b>' +
+            '<span class="pv-rating__cnt">리뷰 ' + rate.count + '개</span>';
+
+        var SPEC = {
+            "다이어리·노트": [["구성", "{name} 1세트"], ["내지", "미색 모조지 · 무지/모눈"], ["사이즈", "약 148 × 210 mm (A5)"], ["제본", "사철 제본 · 펼침 편안"], ["원산지", "대한민국"]],
+            "필기구":       [["구성", "{name}"], ["펜촉", "0.5 mm 니들팁"], ["잉크", "수성 젤 잉크"], ["특징", "빠른 건조 · 적은 번짐"], ["원산지", "대한민국"]],
+            "스티커":       [["구성", "{name}"], ["재질", "유포지 · 방수 코팅"], ["크기", "약 90 × 140 mm 시트"], ["용도", "다이어리 · 엽서 · 포장"], ["원산지", "대한민국"]],
+            "메모지":       [["구성", "{name}"], ["매수", "약 80매 내외"], ["재질", "미색 모조지"], ["크기", "약 75 × 75 mm"], ["원산지", "대한민국"]],
+            "파우치·케이스": [["구성", "{name} 1개"], ["소재", "폴리에스터 · 합성피혁"], ["수납", "펜 10자루 내외"], ["사이즈", "약 200 × 60 mm"], ["원산지", "대한민국"]],
+            "선물·키링":     [["구성", "{name} 1개"], ["소재", "아크릴 · 금속 고리"], ["크기", "약 50 × 70 mm"], ["고리", "회전 클립형"], ["원산지", "대한민국"]]
+        };
+        var specRows = (SPEC[data.cat] || SPEC["메모지"]).map(function (r) {
+            return "<tr><th>" + r[0] + "</th><td>" + r[1].replace("{name}", data.name) + "</td></tr>";
+        }).join("");
+        document.getElementById("pvSpec").innerHTML = "<h4>상품 정보</h4><table><tbody>" + specRows + "</tbody></table>";
+
+        var POOL = [
+            { n: "김*은", t: "사진이랑 색감이 똑같아서 만족해요. 재구매 의사 있어요!", s: 5 },
+            { n: "이*아", t: "배송도 빠르고 포장이 정말 꼼꼼하게 와서 기분 좋았어요.", s: 5 },
+            { n: "박*우", t: "퀄리티가 가격 대비 훌륭합니다. 선물용으로도 좋아요.", s: 5 },
+            { n: "최*린", t: "생각보다 크기가 적당하고 실용적이에요. 잘 쓰고 있어요.", s: 4 },
+            { n: "정*현", t: "감성 가득한 디자인이라 다꾸할 때마다 손이 가요.", s: 5 },
+            { n: "한*서", t: "무난하게 예쁘고 마감도 깔끔해요. 추천합니다.", s: 4 },
+            { n: "윤*지", t: "친구 선물로 샀는데 너무 좋아하더라고요. 또 살 것 같아요.", s: 5 },
+            { n: "장*호", t: "기대 이상이에요. 데일리로 쓰기 딱 좋아요.", s: 5 },
+            { n: "오*빈", t: "색이 은은하고 질감이 좋아요. 다음에 다른 색도 사보려고요.", s: 4 },
+            { n: "서*나", t: "포장도 예쁘고 손편지까지 동봉돼 있어서 감동했어요.", s: 5 },
+            { n: "문*경", t: "실물이 더 예뻐요. 사진보다 고급스러워요.", s: 5 },
+            { n: "강*민", t: "가성비 좋고 무난해요. 무던하게 잘 쓰는 중입니다.", s: 4 }
+        ];
+        var rh = 0; for (var ci = 0; ci < id.length; ci++) rh = (rh * 31 + id.charCodeAt(ci)) >>> 0;
+        var rot = rh % POOL.length;
+        var ordered = POOL.slice(rot).concat(POOL.slice(0, rot));
+        function reviewLi(r, hidden) {
+            return '<li' + (hidden ? ' class="pv-rev-hidden"' : '') + '><div class="pv-rev-top">' +
+                '<span class="pv-rev-name">' + r.n + '</span>' +
+                '<span class="pv-rev-stars">' + starHtml(r.s) + '</span></div><p>' + r.t + '</p></li>';
+        }
+        var pvUser = window.sagakReadUser ? window.sagakReadUser() : null;
+        var canReview = !!(pvUser && S.purchased && S.purchased.has(id));
+        var formHtml;
+        if (canReview) {
+            formHtml = '<div class="pv-rev-invite"><strong>' + pvUser.name + '님이 구매하신 상품이에요.</strong> 사용해보니 어떠셨나요? 후기를 남겨주세요!</div>' +
+                '<form class="pv-rev-form" id="pvRevForm" novalidate>' +
+                    '<div class="pv-rev-form__stars" id="pvRevStars" role="radiogroup" aria-label="별점 선택">' +
+                        '<button type="button" data-v="1" aria-label="1점">★</button>' +
+                        '<button type="button" data-v="2" aria-label="2점">★</button>' +
+                        '<button type="button" data-v="3" aria-label="3점">★</button>' +
+                        '<button type="button" data-v="4" aria-label="4점">★</button>' +
+                        '<button type="button" data-v="5" aria-label="5점">★</button>' +
+                    '</div>' +
+                    '<textarea id="pvRevText" rows="3" placeholder="상품은 어떠셨나요? 후기를 남겨주세요."></textarea>' +
+                    '<button type="submit" class="pv-rev-submit">후기 등록</button>' +
+                    '<p class="pv-rev-msg" id="pvRevMsg" hidden></p>' +
+                '</form>';
+        } else {
+            formHtml = '<div class="pv-rev-locked">' +
+                (pvUser ? '이 상품을 구매하신 분만 후기를 작성할 수 있어요.'
+                        : '<a href="login.html">로그인</a> 후 구매하신 상품에 후기를 남길 수 있어요.') +
+                '</div>';
+        }
+
+        document.getElementById("pvReviews").innerHTML =
+            '<h3>상품 후기 <span id="pvRevCount">' + rate.count + '개</span></h3>' +
+            '<div class="pv-rev-summary"><strong>' + rate.score.toFixed(1) + '</strong>' +
+            '<div>' + starHtml(Math.round(rate.score)) + '<p>' + rate.count + '명이 별점을 남겼어요</p></div></div>' +
+            formHtml +
+            '<ul class="pv-rev-list" id="pvRevList">' +
+                ordered.map(function (r, i) { return reviewLi(r, i >= 3); }).join("") +
+            '</ul>' +
+            '<button type="button" class="pv-rev-more" id="pvRevMore">후기 더보기</button>';
+
+        var revList = document.getElementById("pvRevList");
+        var moreBtn = document.getElementById("pvRevMore");
+        function syncMore() { moreBtn.hidden = revList.querySelectorAll(".pv-rev-hidden").length === 0; }
+        moreBtn.addEventListener("click", function () {
+            revList.querySelectorAll(".pv-rev-hidden").forEach(function (li) { li.classList.remove("pv-rev-hidden"); });
+            syncMore();
+        });
+        syncMore();
+
+        if (canReview) {
+        var pickStar = 0;
+        var starWrap = document.getElementById("pvRevStars");
+        starWrap.querySelectorAll("button").forEach(function (b) {
+            b.addEventListener("click", function () {
+                pickStar = parseInt(b.dataset.v, 10);
+                starWrap.querySelectorAll("button").forEach(function (x) {
+                    x.classList.toggle("on", parseInt(x.dataset.v, 10) <= pickStar);
+                });
+            });
+        });
+
+        var revCountEl = document.getElementById("pvRevCount");
+        document.getElementById("pvRevForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var txt = document.getElementById("pvRevText").value.trim();
+            var msg = document.getElementById("pvRevMsg");
+            if (!pickStar) { msg.hidden = false; msg.className = "pv-rev-msg error"; msg.textContent = "별점을 선택해주세요."; return; }
+            if (txt.length < 5) { msg.hidden = false; msg.className = "pv-rev-msg error"; msg.textContent = "후기를 5자 이상 입력해주세요."; return; }
+            var u = window.sagakReadUser ? window.sagakReadUser() : null;
+            var nm = (u && u.name) ? u.name : "나";
+            var li = document.createElement("li");
+            li.className = "pv-rev-mine";
+            li.innerHTML = '<div class="pv-rev-top"><span class="pv-rev-name">' + nm + '</span>' +
+                '<span class="pv-rev-stars">' + starHtml(pickStar) + '</span></div><p>' +
+                txt.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") + '</p>';
+            revList.insertBefore(li, revList.firstChild);
+            revCountEl.textContent = (parseInt(revCountEl.textContent, 10) + 1) + "개";
+            document.getElementById("pvRevText").value = "";
+            pickStar = 0;
+            starWrap.querySelectorAll("button").forEach(function (x) { x.classList.remove("on"); });
+            msg.hidden = true;
+            window.sagakToast && window.sagakToast("소중한 후기 감사해요! 등록되었어요.");
+        });
+        }
+
+        // 같은 카테고리 추천 상품
+        var related = Object.keys(PRODUCTS).filter(function (key) {
+            return key !== id && PRODUCTS[key].cat === data.cat;
+        }).slice(0, 4);
+
+        if (related.length) {
+            var html = '<h3>이 카테고리의 다른 상품</h3><div class="pv-related__grid">';
+            related.forEach(function (key) {
+                var p = PRODUCTS[key];
+                html += '<a class="pv-rel-card" href="product-view.html?id=' + key + '">' +
+                            '<div class="pv-rel-card__img"><img loading="lazy" src="' + p.img + '" alt="' + p.name + '"></div>' +
+                            '<div class="pv-rel-card__body"><h4>' + p.name + '</h4><strong>' + won(p.price) + '</strong></div>' +
+                        '</a>';
+            });
+            html += '</div>';
+            document.getElementById("pvRelated").innerHTML = html;
+        }
+    })();
+    </script>
+</body>
+</html>
+            
