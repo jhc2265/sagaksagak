@@ -83,7 +83,7 @@ header nav .login_box a img {width: 16px; height: 16px; object-fit: contain;}
     height: 40px;
     place-items: center;
     padding: 0;
-    background: url("../images/icon_top3.png") center / 25px 25px no-repeat;
+    background: url("../images/icon_top3.webp") center / 25px 25px no-repeat;
 }
 .mobile-account-link img {
     display: block;
@@ -96,8 +96,8 @@ header nav .login_box a img {width: 16px; height: 16px; object-fit: contain;}
 }
 
 #hero {width: 100%; height: 645px;
-/* background-image: url(../images/visual_main.jpg); background-repeat: no-repeat; background-position: center 0;} */
-background: url(../images/visual_main.jpg) no-repeat center 0; background-size: cover; position: relative;}
+/* background-image: url(../images/visual_main.webp); background-repeat: no-repeat; background-position: center 0;} */
+background: url(../images/visual_main.webp) no-repeat center 0; background-size: cover; position: relative;}
 
 #hero .textbox {color: #99775A; position: absolute; left: 50%; margin-left: -760px; transform: translate(0,50%);}
 #hero .textbox .text1 {font-size: 36px;}
@@ -202,7 +202,7 @@ background: url(../images/visual_main.jpg) no-repeat center 0; background-size: 
 .wish.selected:hover .heart-fill {transform: translate(-50%, -50%) scale(1.15);}
 
 
-#section02 {background: url(../images/section2_bg.png) no-repeat center 0; background-size: cover; padding: 100px 0; margin-bottom: 160px;}
+#section02 {background: url(../images/section2_bg.webp) no-repeat center 0; background-size: cover; padding: 100px 0; margin-bottom: 160px;}
 #section02 .container .title_box {position: relative; width: fit-content; margin: 0 auto;}
 #section02 .container img {width: 100%; display: block; margin-bottom: 40px;}
 #section02 .container h2 {font-family: 'YeogiOttaeJalnan'; font-size: 48px; color: #99775A; width: 0 auto; margin: 0 auto; text-align: center; margin-bottom: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);white-space: nowrap;}
@@ -399,7 +399,7 @@ footer .footer_deco {display: none;}
         width: 40px;
         height: 40px;
         pointer-events: none;
-        background: url("../images/icon_top3.png") center / 25px 25px no-repeat;
+        background: url("../images/icon_top3.webp") center / 25px 25px no-repeat;
     }
     header h1 {
         position: absolute;

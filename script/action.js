@@ -26,26 +26,26 @@
 
     /* ---------- 공용 상품 카탈로그 ---------- */
     var PRODUCTS = {
-        "daily-set":       { name: "사각사각 데일리 필기 세트", price: 15900, img: "images/products/diary-starter-set.png",        opt: "매일 쓰는 필수 아이템 모음 세트" },
-        "floral-diary":    { name: "플라워 패턴 다이어리",      price: 12500, img: "images/products/floral-diary-set.png",         opt: "잔잔한 플라워 패턴의 만년 다이어리" },
-        "gel-pen-4":       { name: "사각사각 젤펜 4종 세트",    price: 6800,  img: "images/products/pastel-gel-pen-4set.png",      opt: "부드러운 필기감의 0.5mm 젤펜 세트" },
-        "washi-6":         { name: "마스킹테이프 6종 세트",     price: 7900,  img: "images/products/floral-washi-tape-6set.png",   opt: "다꾸가 즐거워지는 감성 마테 세트" },
-        "memo-3":          { name: "모눈 메모지 3종 세트",      price: 3900,  img: "images/products/memo-pad-3set.png",            opt: "떼었다 붙였다 활용도 높은 메모지" },
-        "vintage-sticker": { name: "빈티지 플라워 스티커팩",    price: 4500,  img: "images/products/vintage-sticker-pack.png",     opt: "다이어리를 꾸미기 좋은 스티커 팩" },
-        "check-pouch":     { name: "체크 패브릭 파우치",        price: 9900,  img: "images/products/check-pencil-pouch.png",       opt: "넉넉한 수납의 체크 파우치" },
-        "teddy-keyring":   { name: "곰돌이 키링",               price: 6000,  img: "images/products/teddy-keyring-set.png",        opt: "가방을 채워주는 곰돌이 키링" },
-        "grid-note":       { name: "그리드 노트 (B5)",          price: 5500,  img: "images/products/grid-note-b5.png",             opt: "깔끔한 그리드 내지 노트" },
-        "tteok-memo":      { name: "떡메모지 2종 세트",         price: 3200,  img: "images/products/tteok-memo-2set.png",          opt: "일러스트가 귀여운 떡메모지" },
-        "leather-case":    { name: "가죽 펜슬케이스",           price: 12000, img: "images/products/leather-pen-case.png",         opt: "필기구를 정리하는 가죽 케이스" },
-        "gold-clip":       { name: "골드 클립 세트",            price: 3500,  img: "images/products/gold-binder-clip-set.png",     opt: "고급스러운 골드 클립 세트" },
-        "weekly-diary":    { name: "위클리 다이어리 세트",      price: 16800, img: "images/bestseller/weekly-diary-set.png",       opt: "한 주가 정리되는 위클리 세트" },
-        "gel-pen-5":       { name: "사각사각 젤펜 5종 세트",    price: 7900,  img: "images/bestseller/pastel-gel-pen-set.png",     opt: "파스텔 색감의 젤펜 5종" },
-        "washi-4":         { name: "플라워 마스킹테이프 4종 세트", price: 6800, img: "images/bestseller/floral-washi-tape-set.png", opt: "은은한 플라워 마테 4종" },
-        "floral-memo-3":   { name: "플라워 메모지 3종 세트",    price: 3900,  img: "images/bestseller/floral-memo-pad-set.png",    opt: "감성 가득한 플라워 메모지" },
-        "emo-sticker":     { name: "감성 스티커 팩",            price: 4200,  img: "images/bestseller/vintage-sticker-pack.png",   opt: "어디에나 어울리는 감성 스티커" },
-        "vintage-clip-6":  { name: "빈티지 클립 6종 세트",      price: 5500,  img: "images/bestseller/antique-binder-clip-set.png", opt: "분위기 있는 빈티지 클립 6종" },
-        "grid-note-a5":    { name: "모눈 노트 (A5)",            price: 3800,  img: "images/bestseller/grid-notebook.png",          opt: "휴대하기 좋은 A5 모눈 노트" },
-        "mini-tteok":      { name: "미니 떡메모지 세트",        price: 2900,  img: "images/bestseller/floral-memo-pad-set.png",    opt: "작고 귀여운 미니 떡메모지" }
+        "daily-set":       { name: "사각사각 데일리 필기 세트", price: 15900, img: "images/products/diary-starter-set.webp",        opt: "매일 쓰는 필수 아이템 모음 세트" },
+        "floral-diary":    { name: "플라워 패턴 다이어리",      price: 12500, img: "images/products/floral-diary-set.webp",         opt: "잔잔한 플라워 패턴의 만년 다이어리" },
+        "gel-pen-4":       { name: "사각사각 젤펜 4종 세트",    price: 6800,  img: "images/products/pastel-gel-pen-4set.webp",      opt: "부드러운 필기감의 0.5mm 젤펜 세트" },
+        "washi-6":         { name: "마스킹테이프 6종 세트",     price: 7900,  img: "images/products/floral-washi-tape-6set.webp",   opt: "다꾸가 즐거워지는 감성 마테 세트" },
+        "memo-3":          { name: "모눈 메모지 3종 세트",      price: 3900,  img: "images/products/memo-pad-3set.webp",            opt: "떼었다 붙였다 활용도 높은 메모지" },
+        "vintage-sticker": { name: "빈티지 플라워 스티커팩",    price: 4500,  img: "images/products/vintage-sticker-pack.webp",     opt: "다이어리를 꾸미기 좋은 스티커 팩" },
+        "check-pouch":     { name: "체크 패브릭 파우치",        price: 9900,  img: "images/products/check-pencil-pouch.webp",       opt: "넉넉한 수납의 체크 파우치" },
+        "teddy-keyring":   { name: "곰돌이 키링",               price: 6000,  img: "images/products/teddy-keyring-set.webp",        opt: "가방을 채워주는 곰돌이 키링" },
+        "grid-note":       { name: "그리드 노트 (B5)",          price: 5500,  img: "images/products/grid-note-b5.webp",             opt: "깔끔한 그리드 내지 노트" },
+        "tteok-memo":      { name: "떡메모지 2종 세트",         price: 3200,  img: "images/products/tteok-memo-2set.webp",          opt: "일러스트가 귀여운 떡메모지" },
+        "leather-case":    { name: "가죽 펜슬케이스",           price: 12000, img: "images/products/leather-pen-case.webp",         opt: "필기구를 정리하는 가죽 케이스" },
+        "gold-clip":       { name: "골드 클립 세트",            price: 3500,  img: "images/products/gold-binder-clip-set.webp",     opt: "고급스러운 골드 클립 세트" },
+        "weekly-diary":    { name: "위클리 다이어리 세트",      price: 16800, img: "images/bestseller/weekly-diary-set.webp",       opt: "한 주가 정리되는 위클리 세트" },
+        "gel-pen-5":       { name: "사각사각 젤펜 5종 세트",    price: 7900,  img: "images/bestseller/pastel-gel-pen-set.webp",     opt: "파스텔 색감의 젤펜 5종" },
+        "washi-4":         { name: "플라워 마스킹테이프 4종 세트", price: 6800, img: "images/bestseller/floral-washi-tape-set.webp", opt: "은은한 플라워 마테 4종" },
+        "floral-memo-3":   { name: "플라워 메모지 3종 세트",    price: 3900,  img: "images/bestseller/floral-memo-pad-set.webp",    opt: "감성 가득한 플라워 메모지" },
+        "emo-sticker":     { name: "감성 스티커 팩",            price: 4200,  img: "images/bestseller/vintage-sticker-pack.webp",   opt: "어디에나 어울리는 감성 스티커" },
+        "vintage-clip-6":  { name: "빈티지 클립 6종 세트",      price: 5500,  img: "images/bestseller/antique-binder-clip-set.webp", opt: "분위기 있는 빈티지 클립 6종" },
+        "grid-note-a5":    { name: "모눈 노트 (A5)",            price: 3800,  img: "images/bestseller/grid-notebook.webp",          opt: "휴대하기 좋은 A5 모눈 노트" },
+        "mini-tteok":      { name: "미니 떡메모지 세트",        price: 2900,  img: "images/bestseller/floral-memo-pad-set.webp",    opt: "작고 귀여운 미니 떡메모지" }
     };
 
     var FREE_SHIP_MIN = 30000;   // 무료배송 기준 (전 페이지 통일)
